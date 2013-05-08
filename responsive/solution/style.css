@@ -119,26 +119,16 @@ input{
 }
 
 /* Desktop styles */
-/* TO DO #1: Let's create a media query that:
-1. will be ignored by older browsers
-2. will be used by devices 480px or wider */
-@media /* complete the media query! */  {
-
-    /* since this is for the desktop, 
-    let's have the aside and section 
-    elements show up side-by-side.*/
+@media only screen and (min-width: 480px) {
   aside {
-    /*TO DO #2: float the aside element, and 
-    set the width to a percent value of your choosing */
+    float:right;
+    width:50%;
   }
   section {
-    /*TO DO #3:
-    set the width of section to a percent value of your choosing */
+    width: 50%;
   }
   
   header {
-    /*TO DO #4
-    make the background-color a different color
-    on the desktop */
+    background-color: purple;
   }
 }
