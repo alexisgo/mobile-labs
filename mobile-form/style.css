@@ -116,12 +116,18 @@ input{
 	display: block;
 	width: 80%;
 	height: 20px;
-	/*so the input elem's size doesn't
-	change when we add in visible borders below*/
-  border: 5px solid transparent;
 }
 
-/* TO DO #1:
+/* TO DO #1: 
+Use the :not selector to select 
+all input types EXCEPT submit.  */
+input:not(/* add code to select anything with type=submit */) {
+  /*so the input elem's size doesn't
+	change when we add in visible borders below*/
+  border-width: 5px;
+}
+
+/* TO DO #2:
 - Let's add a selector to style the input element when 
 its in the required state.
 - Give it a 5px solid yellow border. */
@@ -130,7 +136,7 @@ its in the required state.
   
 } 
 
-/* TO DO #2:
+/* TO DO #3:
 - Let's add another selector to style the input element when 
 (1) it has focus, is valid, and is rquired.
 (2) is valid and required
@@ -140,7 +146,7 @@ In both cases, give it a 5px solid GREEN border. */
   
 } 
 
-/* TO DO #3:
+/* TO DO #4:
 - Let's add a final selector to style the input element when 
 its in the invalid state.
 - Give it a 5px solid red border. */
