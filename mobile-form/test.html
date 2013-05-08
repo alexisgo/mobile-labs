@@ -40,6 +40,14 @@
         <input type="submit">
       </form>
     </section>
+    <script>
+    var slider = document.getElementById("slide");
+    slider.onchange = function(e) {
+      var sliderlabel = document.getElementById("slidervalue");
+      var val = e.target.value;
+      sliderlabel.innerHTML=val;
+    };
+    </script>
 
   </body>
 </html>

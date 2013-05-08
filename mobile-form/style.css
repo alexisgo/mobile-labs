@@ -116,19 +116,22 @@ input{
 	display: block;
 	width: 80%;
 	height: 20px;
+	/*so the input elem's size doesn't
+	change when we add in visible borders below*/
+  border: 5px solid transparent;
 }
 
 /* Extra CSS3 to add to our form */
 input:required{
-	background:#ffffff url('mandatory.png') no-repeat 100% 50%;
+  border: 5px solid yellow;
 }
 
 input:focus:valid:required, input:valid:required{
-	background:#ffffff url('valid.png') no-repeat 100% 50%;
+  border: 5px solid green;
 }
 
 input:focus:invalid{
-	background:#ffffff url('invalid.png') no-repeat 100% 50%;
+  border: 5px solid red;
 }
 
 /* Desktop styles */
