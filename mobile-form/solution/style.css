@@ -116,7 +116,11 @@ input{
 	display: block;
 	width: 80%;
 	height: 20px;
-	/*so the input elem's size doesn't
+}
+
+/* for all input types EXCEPT submit */
+input:not([type=submit]) {
+  /*so the input elem's size doesn't
 	change when we add in visible borders below*/
   border-width: 5px;
 }
