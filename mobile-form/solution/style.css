@@ -121,34 +121,18 @@ input{
   border: 5px solid transparent;
 }
 
-/* TO DO #1:
-- Let's add a selector to style the input element when 
-its in the required state.
-- Give it a 5px solid yellow border. */
+/* Extra CSS3 to add to our form */
+input:required{
+  border: 5px solid yellow;
+}
 
-/* add in input selector*/ {
-  
-} 
+input:focus:valid:required, input:valid:required{
+  border: 5px solid green;
+}
 
-/* TO DO #2:
-- Let's add another selector to style the input element when 
-(1) it has focus, is valid, and is rquired.
-(2) is valid and required
-In both cases, give it a 5px solid GREEN border. */
-
-/* add in input selector*/ {
-  
-} 
-
-/* TO DO #3:
-- Let's add a final selector to style the input element when 
-its in the invalid state.
-- Give it a 5px solid red border. */
-
-/* add in input selector*/ {
-  
-} 
-
+input:focus:invalid{
+  border: 5px solid red;
+}
 
 /* Desktop styles */
 @media only screen and (min-width: 480px) {
