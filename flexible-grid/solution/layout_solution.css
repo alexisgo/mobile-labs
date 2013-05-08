@@ -1,0 +1,44 @@
+#wrap {
+  width: 90%;
+}
+
+header {
+  width: 100%;
+}
+
+hgroup {
+ width: 41.666667% /* 400px/960 */;
+ float:left;
+}
+
+header .widget-area {
+ width: 56.25% /* 540px/960 */;
+ float: right;
+ margin-top: 4.1666667%; /* */
+ text-align: right;
+}
+
+.inner {
+  clear: both;
+  width: 100%;
+}
+
+.content-sidebar-wrap {
+  width: 82.291667% /* 790px/960 */;
+}
+
+img {
+    max-width: 100%;
+}
+
+.content {
+  width: 48.958333% /* 470px/960 */;
+
+  float: left;
+}
+
+.sidebar {
+  width: 31.25% /* 300px/960 */;
+  float:right;
+  
+}

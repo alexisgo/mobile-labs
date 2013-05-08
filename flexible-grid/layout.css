@@ -1,0 +1,60 @@
+/* Let's change all the fixed widths to flexible,
+percent widths.
+For the wrap, it's suggested we use 90% */
+
+.wrap {
+  width: 960px;
+}
+
+/* The header should have a 100% width */
+header {
+  width: 960px;
+}
+
+/* To find flexible grid width:
+
+take the old wrap width (960px), which is the
+base width, and divide the width of the
+element by the base width
+
+So let's take each element's current fixed width,
+and divide it by 960. replace the current
+value with the result (it's suggested you 
+keep the decimals)
+*/
+
+hgroup {
+ width: 400px;
+ float: left;
+}
+
+header .widget-area {
+ width: 540px;
+ float: right;
+ margin-top: 40px;
+}
+
+.inner {
+  clear: both;
+  width: 960px;
+}
+
+.content-sidebar-wrap {
+  width: 790px;
+}
+
+.content {
+  width: 470px;
+  float: left;
+}
+
+img {
+    
+    /* this is where we add in max-width: 100%;
+    to make this a flexible image */
+}
+
+.sidebar {
+  width: 300px;
+  float:right;
+}
