@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<meta charset=utf-8 />
+<title>Customizing Mobile Safari UI Components</title>
+  <meta name="apple-mobile-web-app-capable" 
+content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width">
+  <script>
+  $(document).ready(
+    function() {
+      var isStandAlone = window.navigator.standalone;
+
+      $('#standalonestatus').append("hi " + isStandAlone);      
+    }
+  );
+  </script>
+</head>
+<body>
+  <h1>Hello, Standalone mode!</h1>
+  
+  <h3>Is Standalone mode on?</h3> 
+  <h4 id="standalonestatus"></h4>
+</body>
+</html>
